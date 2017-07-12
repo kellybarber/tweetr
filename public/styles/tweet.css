@@ -1,0 +1,86 @@
+
+article.tweet {
+  width: 384px;
+  background-color: white;
+  margin: auto;
+  border: solid 1px #aeb0b2;
+  border-radius: 5px;
+  position: relative;
+
+}
+
+article.tweet header {
+  height: 65px;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+}
+
+article.tweet header img {
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+  border-radius: 5px;
+  float: left;
+}
+
+article.tweet header .name {
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px 5px;
+  float: left;
+  color: #4C696B;
+}
+
+article.tweet header .handle {
+  float: right;
+  padding: 15px 10px;
+  color: #a4a6a8;
+}
+
+article.tweet div.content {
+  height: 80px;
+  clear: both;
+}
+
+article.tweet div.content .message {
+  padding: 30px 10px;
+}
+
+article.tweet footer {
+  height: 30px;
+  border-top: solid 1px;
+  border-color: #eee;
+  bottom: 0;
+}
+
+.post-ago {
+  font-size: 65%;
+  padding: 8px 10px;
+  float: left;
+}
+
+.retweet,
+.like,
+.flag {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: none;
+}
+
+article:hover .retweet,
+article:hover .like,
+article:hover .flag {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: initial;
+}
+
+article:hover {
+  border-color: #2B4751;
+}
+
+article:hover header .name {
+  color: #2B4751;
+}
