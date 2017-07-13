@@ -75,6 +75,11 @@ $(document).ready(() => {
     }
   })
 
+  $("button").on('click', () => {
+    $(".new-tweet").slideToggle();
+    $("textarea").focus();
+  })
+
 
 
 })
