@@ -35,46 +35,27 @@
 
   <body>
 
-    <!-- Top nav bar (fixed) -->
+    <!-- Nav Bar -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
 
-
-
-    <!-- Page-specific (main) content here -->
+    <!-- Content Container -->
     <main class="container">
 
+      <!-- Tweet Composer -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
+        <form action="/" method="POST">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
 
-      <section id="tweet-box">
-        <!-- <article class="tweet">
-          <header>
-            <img class="avatar" src="/images/avatar.jpg">
-            <div class="name">Rowan Avatar</div>
-            <div class="handle">@mrbean</div>
-          </header>
-          <div class="content">
-            <div class="message">This is a tweet!</div>
-          </div>
-          <footer>
-            <div class="post-ago">10 days ago</div>
-            <img class="flag" src="/images/flag.png">
-            <img class="retweet" src="/images/retweet.png">
-            <img class="like" src="/images/like.png">
-          </footer>
-        </article> -->
-
-
-      </section>
+      <!-- Box for Holding Tweets -->
+      <section id="tweets-container"> </section>
 
     </main>
 

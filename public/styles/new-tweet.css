@@ -3,7 +3,7 @@
   background-color: #eee;
   border: solid 1px;
   border-radius: 5px;
-  margin: 2em;
+  margin: 1em 2em;
   padding: 10px;
 
 }
@@ -20,6 +20,10 @@
 
 .new-tweet span {
   float: right;
+}
+
+.alert {
+  clear: none;
 }
 
 span.counter.negative {
