@@ -75,11 +75,10 @@ $(document).ready(() => {
     }
   })
 
+  // -> Compose Button to Toggle Tweet Input //
   $("button").on('click', () => {
     $(".new-tweet").slideToggle();
     $("textarea").focus();
   })
-
-
 
 })
