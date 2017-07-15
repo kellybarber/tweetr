@@ -1,5 +1,5 @@
 
-// -> Creates Tweet from User Data //
+// -> Creates Tweet from User Data:
 function createTweetElement(tweetData) {
 
   let $tweet = $("<article>").addClass("tweet");
@@ -30,7 +30,7 @@ function createTweetElement(tweetData) {
   return $tweet;
 }
 
-// -> Adds Tweets to Page //
+// -> Adds Tweets to Page:
 function renderTweets(tweets) {
     tweets.forEach((tweet) => {
       $('#tweets-container').append(createTweetElement(tweet));
@@ -38,10 +38,10 @@ function renderTweets(tweets) {
 
 }
 
-// -> Calls on Page Load //
+// -> Calls on Page Load:
 $(document).ready(() => {
 
-  // -> Loads Tweets to Page //
+  // -> Loads Tweets to Page:
   function loadTweets(callback) {
     $.ajax({
       url: "/tweets",
@@ -53,7 +53,7 @@ $(document).ready(() => {
   }
   loadTweets(renderTweets);
 
-  // -> New Tweet Submission Handler //
+  // -> New Tweet Submission Handler:
   $("form").on("submit", function(event) {
     event.preventDefault();
 
@@ -75,7 +75,7 @@ $(document).ready(() => {
     }
   })
 
-  // -> Compose Button to Toggle Tweet Input //
+  // -> Compose Button to Toggle Tweet Input:
   $("button").on('click', () => {
     $(".new-tweet").slideToggle();
     $("textarea").focus();
